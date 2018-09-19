@@ -8,17 +8,33 @@ body {
 
 html {
     height: 100vh;
+    background-color: #0a0a0b;
 }
 
 #particles-js{
     background: #0a0a0b;
-    height: 97vh;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:0;
+    opacity: 1
+}
+
+#introtext {
+    color: white;
+    margin-top: 20vh;
+    position: absolute;
+    background-color: transparent;
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5em;
 }
 
 #name-banner {
     color: white;
     font-family: 'EB Garamond', serif;
-    font-size: 10vw;
+    font-size: 13vw;
     text-align: center;
 }
 
@@ -29,12 +45,7 @@ html {
     border-color: white;
     display: inline-block;
     position: absolute;
-    margin-top: 25vh;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    margin-top: 35vh;
 }
 
 #grad1 {
@@ -50,4 +61,36 @@ html {
 
 .nav-link {
     font-family: 'Roboto', sans-serif;
+}
+
+.no-click {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbar {
+    min-height: 3vh
+}
+
+#about {
+    margin-top: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0);
+    position: relative;
+    padding: 50px;
+}
+
+.aboutpar {
+    font-size: 1.5em;
+}
+
+.banner {
+    position: static;
+}
+
+.jumbotron {
+    background-color: white;
 }
