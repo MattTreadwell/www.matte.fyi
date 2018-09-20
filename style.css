@@ -99,6 +99,7 @@ html {
 
 .banner {
     position: static;
+    pointer-events: none;
 }
 
 .jumbotron {
