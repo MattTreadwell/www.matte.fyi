@@ -7,7 +7,6 @@ Right now it uses Bootstrap 4, Javascript, and [particles.js](https://github.com
 
 * Control panel and login form for managing subdirectories protected by http-digest
 * Animate Name Banner (potentially with Angular or ReactJS)
-* Fix mobile scaling for nav bar
 * Finish resume/CV portion of website
 
 ## Preview
