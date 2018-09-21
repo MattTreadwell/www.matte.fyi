@@ -94,7 +94,7 @@ html {
     padding: 50px;
 }
 .aboutpar {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .banner {
@@ -111,13 +111,59 @@ html {
 }
 
 .skills {
-    background-color: rgba(20, 20, 20, 0.4);
+    background-color: rgba(20, 20, 20, 0.7);
     font-family: Roboto, sans-serif;
+    font-weight: 100;
 }
 
 #tablehead {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 100;
     font-style: normal;
-    font-size: 2.2em;
+    font-size: 2.5em;
+    padding: 15px;
+}
+
+#subtablehead {
+    color: rgba(200, 200, 200, 0.8);
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+.tableitem {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.8em;
+    padding: 10px;
+
+}
+
+#border {
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.name {
+    text-align: center;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    display: block;
+}
+
+.jumboheader {
+    font-size: 3.3em;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-height: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: white;
 }
