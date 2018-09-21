@@ -6,8 +6,8 @@ Right now it uses Bootstrap 4, Javascript, and [particles.js](https://github.com
 ## Planned Features
 
 * Control panel and login form for managing subdirectories protected by http-digest
-* Animate Name Banner (potentially with Angular or ReactJS)
-* Finish resume/CV portion of website
+* Animate Name Banner into navbar (potentially with Angular or ReactJS)
+* Finish Education, Projects, and Contact
 
 ## Preview
 
