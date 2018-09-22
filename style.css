@@ -93,6 +93,16 @@ html {
     position: relative;
     padding: 50px;
 }
+
+#education {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0);
+    position: relative;
+    padding: 50px;
+}
+
 .aboutpar {
     padding-top: 3%;
     font-size: 1.4em;
@@ -170,3 +180,12 @@ div {
     border-style: solid;
     border-color: white;
 }
+
+.edlogo {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+ }
