@@ -43,16 +43,35 @@ html {
 #name-border {
     background: rgba(0, 0, 0, 0.3);
     padding: 2em;
-    border-style: double;
-    border-color: white;
+    border: double white;
     display: inline-block;
     position: absolute;
     margin-top: 35vh;
 }
 
-#grad1 {
-    height: 100px;
-    background: white linear-gradient(#0a0a0b, white);
+#about {
+    margin-top: 101vh;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding: 50px;
+}
+
+#skills {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding: 50px;
+}
+
+#education {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 50px;
 }
 
 .bd-navbar {
@@ -74,33 +93,6 @@ html {
 
 .navbar {
     min-height: 3vh
-}
-
-#about {
-    margin-top: 101vh;
-    font-family: 'Roboto', sans-serif;
-    background: rgba(255, 255, 255, 0.9);
-    color: rgba(0, 0, 0);
-    position: relative;
-    padding: 50px;
-}
-
-#skills {
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-    background: rgba(255, 255, 255, 0.9);
-    color: rgba(0, 0, 0);
-    position: relative;
-    padding: 50px;
-}
-
-#education {
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-    background: rgba(255, 255, 255, 0.9);
-    color: rgba(0, 0, 0);
-    position: relative;
-    padding: 50px;
 }
 
 .aboutpar {
@@ -127,7 +119,7 @@ html {
     font-weight: 100;
 }
 
-#tablehead {
+.tableheader {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 100;
     font-style: normal;
@@ -135,7 +127,7 @@ html {
     padding: 15px;
 }
 
-#subtablehead {
+.tablesubheader {
     color: rgba(200, 200, 200, 0.8);
     padding: 5px;
     font-size: 1.4em;
@@ -148,7 +140,7 @@ html {
 
 }
 
-#border {
+.tableborder {
     border-bottom: 1px solid rgba(200, 200, 200, 0.5);
 }
 
@@ -177,8 +169,7 @@ div {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-style: solid;
-    border-color: white;
+    border: solid white;
 }
 
 .edlogo {

@@ -61,9 +61,10 @@
     </div>
 </div>
 
-<!-- About section/resume -->
-<!--<div id="grad1"></div>-->
+<!-- Resume Section -->
 <div class="container" id="1">
+
+    <!-- About -->
     <div class="jumbotron" id="about">
         <h1 class="text-center jumboheader">About</h1>
 
@@ -73,7 +74,7 @@
                 <img class="avatar" src="avatar.jpg" alt="Avatar">
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12">
-                <p class="aboutpar text-sm-center text-md-center text-lg-left">
+                <p class="aboutpar text-lg-left text-center">
                     My name is <b>Matthew Treadwell</b>.
                     I currently study Applied and Computational Mathematics at the <b>University of Southern
                     California</b>.
@@ -83,9 +84,8 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
+    <!-- Skills -->
     <div class="jumbotron" id="skills">
         <h1 class="text-center jumboheader">Skills</h1>
 
@@ -95,18 +95,20 @@
             <div class="col-md-10 col-md-offset-1 col-sm-12">
                 <p class="text-center skillblob">
                     I enjoy working with others in building applications.
-                    I am most comfortable with traditional programming languages and system-administration, but I have also explored
+                    I am most comfortable with traditional programming languages and system-administration, but I have
+                    also explored
                     font-end development and basic machine learning.
                 </p>
             </div>
         </div>
 
+        <!-- Skill table(s) -->
         <div class="row">
             <div class="col-sm-12 skills">
-                <h2 style="padding-bottom: 0" class="col-sm-12 text-center" id="tablehead">Coding Skills</h2>
+                <h2 style="padding-bottom: 0" class="tableheader col-sm-12 text-center">Coding Skills</h2>
 
-                <div class="name col-sm-12" id="border"></div>
-                <h3 class="col-sm-12 text-sm-center text-md-left" id="subtablehead">Programming Languages</h3>
+                <div class="tableborder name col-sm-12"></div>
+                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Programming Languages</h3>
 
                 <div class="row">
 
@@ -115,8 +117,8 @@
                     <div class="name col-md-4 col-sm-12 tableitem">Python</div>
                 </div>
 
-                <div class="name col-sm-12" id="border"></div>
-                <h3 class="col-sm-12 text-sm-center text-md-left" id="subtablehead">Scripting Languages</h3>
+                <div class="tableborder name col-sm-12"></div>
+                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Scripting Languages</h3>
 
                 <div class="row">
 
@@ -125,8 +127,8 @@
                     <div class="name col-md-4 col-sm-12 tableitem">awk</div>
                 </div>
 
-                <div class="name col-sm-12" id="border"></div>
-                <h3 class="col-sm-12 text-sm-center text-md-left" id="subtablehead">Backend Technologies</h3>
+                <div class="tableborder name col-sm-12"></div>
+                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Backend Technologies</h3>
 
                 <div class="row">
 
@@ -136,8 +138,8 @@
                     <div class="name col-md-4 col-sm-12 tableitem">HTTP Digest</div>
                 </div>
 
-                <div class="name col-sm-12" id="border"></div>
-                <h3 class="col-sm-12 text-sm-center text-md-left" id="subtablehead">Frontend Technologies</h3>
+                <div class="tableborder name col-sm-12"></div>
+                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Frontend Technologies</h3>
 
                 <div class="row">
 
@@ -149,9 +151,8 @@
 
         </div>
     </div>
-</div>
 
-<div class="container">
+    <!-- Education -->
     <div class="jumbotron" id="education">
         <h1 class="text-center jumboheader">Education</h1>
 
@@ -159,7 +160,7 @@
             <div class="col-md-5 col-sm-12">
                 <img class="edlogo" src="usc.png" alt="USC">
             </div>
-            <div class="col-md-7 col-sm-12 text-sm-center text-md-left">
+            <div class="col-md-7 col-sm-12 text-center text-md-left">
                 <h3>University of Southern California</h3>
                 <p>January 2018 to December 2020</p>
                 <p>Applied and Computational Mathematics</p>
@@ -167,12 +168,12 @@
             </div>
         </div>
 
-        <div id="border" class="name col-sm-12"></div>
+        <div class="tableborder name col-sm-12"></div>
         <div class="row" style="padding-top: 15px">
             <div class="col-md-5 col-sm-12">
                 <img class="edlogo" src="pcc.png" alt="PCC">
             </div>
-            <div class="col-md-7 col-sm-12 text-sm-center text-md-left">
+            <div class="col-md-7 col-sm-12 text-center text-md-left">
                 <h3>Pasadena City College</h3>
                 <p>September 2016 to December 2017</p>
                 <p>Computer Information Science</p>
@@ -183,7 +184,7 @@
     </div>
 </div>
 
-<!-- Load particles.js -->
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <script>
@@ -193,24 +194,10 @@
 </script>
 
 <script>
-    var i = 0;
-    var txt = 'Lorem ipsum dummy text blabla.';
-    var speed = 50;
-
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("introtext").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-    }
-</script>
-
-<script>
-    ScrollReveal().reveal('#introtext', {delay: 200, reset: true})
-    ScrollReveal().reveal('#name-border', {delay: 350, reset: true})
-    ScrollReveal().reveal('.jumbotron', {reset: false, delay: 250})
-    ScrollReveal().reveal('.skills', {reset: false, delay: 250})
+    ScrollReveal().reveal('#introtext', {delay: 200, reset: true});
+    ScrollReveal().reveal('#name-border', {delay: 350, reset: true});
+    ScrollReveal().reveal('.jumbotron', {reset: false, delay: 250});
+    ScrollReveal().reveal('.skills', {reset: false, delay: 250});
 </script>
 
 </body>
