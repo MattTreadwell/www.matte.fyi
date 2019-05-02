@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 <head>
     <meta charset="UTF-8">
     <title>Matthew Treadwell</title>
@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"/>
     <meta name="description"
-          content="Matthew Treadwell is an Applied and Computational Mathematics student at the University of Southern California (USC). His main focuses are Machine Learning, Web Development, and Computer Science.">
+          content="Matthew Treadwell is a Computer Science student at the University of Southern California (USC). His main focuses are Machine Learning and Web Development.">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300" rel="stylesheet">
@@ -15,14 +15,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <!-- Nav Bar -->
@@ -54,9 +54,9 @@
 <div id="particles-js"></div>
 
 <div class="d-flex justify-content-center banner">
-    <h2 id="introtext" class="no-click"><i>hi, my name is...</i></h2>
+    <h2 id="introtext" class="no-click load-hidden"><i>hi, my name is...</i></h2>
 
-    <div id="name-border" class="no-click">
+    <div id="name-border" class="no-click load-hidden">
         <h1 id="name-banner">TREADWELL</h1>
     </div>
 </div>
@@ -65,19 +65,22 @@
 <div class="container" id="1">
 
     <!-- About -->
-    <div class="jumbotron" id="about">
+    <div class="jumbotron load-hidden" id="about">
         <h1 class="text-center jumboheader">About</h1>
 
 
         <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12">
-                <img class="avatar" src="avatar.jpg" alt="Avatar">
+                <picture class="avatar">
+                    <source srcset="img/avatar.webp" type="image/webp">
+                    <source srcset="img/avatar.jpg" type="image/jpeg">
+                    <img class="avatar" src="img/avatar.jpg" alt="avatar">
+                </picture>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12">
                 <p class="aboutpar text-lg-left text-center">
                     My name is <b>Matthew Treadwell</b>.
-                    I currently study Applied and Computational Mathematics at the <b>University of Southern
-                    California</b>.
+                    I currently study Computer Science at the <b>University of Southern California</b>.
                     My interests consist of learning and using new technologies.
                     Recently, my focus has been aimed towards Machine Learning and Web Development.
                 </p>
@@ -86,7 +89,7 @@
     </div>
 
     <!-- Skills -->
-    <div class="jumbotron" id="skills">
+    <div class="jumbotron load-hidden" id="skills">
         <h1 class="text-center jumboheader">Skills</h1>
 
         <!-- text blob -->
@@ -95,16 +98,15 @@
             <div class="col-md-10 col-md-offset-1 col-sm-12">
                 <p class="text-center skillblob">
                     I enjoy working with others in building applications.
-                    I am most comfortable with traditional programming languages and system-administration, but I have
-                    also explored
-                    font-end development and basic machine learning.
+                    I am most comfortable with traditional programming languages and system administration, but I have
+                    also created complex, full-stack applications.
                 </p>
             </div>
         </div>
 
         <!-- Skill table(s) -->
         <div class="row">
-            <div class="col-sm-12 skills">
+            <div class="col-sm-12 skills load-hidden">
                 <h2 style="padding-bottom: 0" class="tableheader col-sm-12 text-center">Coding Skills</h2>
 
                 <div class="tableborder name col-sm-12"></div>
@@ -133,9 +135,8 @@
                 <div class="row">
 
                     <div class="name col-md-4 col-sm-12 tableitem">LAMP Stack</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">DNS</div>
+                    <div class="name col-md-4 col-sm-12 tableitem">SQL</div>
                     <div class="name col-md-4 col-sm-12 tableitem">SSL</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">HTTP Digest</div>
                 </div>
 
                 <div class="tableborder name col-sm-12"></div>
@@ -153,17 +154,21 @@
     </div>
 
     <!-- Education -->
-    <div class="jumbotron" id="education">
+    <div class="jumbotron load-hidden" id="education">
         <h1 class="text-center jumboheader">Education</h1>
 
         <div class="row">
             <div class="col-md-5 col-sm-12">
-                <img class="edlogo" src="usc.png" alt="USC">
+                <picture class="edlogo">
+                    <source srcset="img/usc.webp" type="image/webp">
+                    <source srcset="img/usc.png" type="image/png">
+                    <img class="edlogo" src="img/usc.png" alt="USC">
+                </picture>
             </div>
             <div class="col-md-7 col-sm-12 text-center text-md-left">
                 <h3>University of Southern California</h3>
                 <p>January 2018 to December 2020</p>
-                <p>Applied and Computational Mathematics</p>
+                <p>B.S. Computer Science</p>
                 <p></p>
             </div>
         </div>
@@ -171,7 +176,11 @@
         <div class="tableborder name col-sm-12"></div>
         <div class="row" style="padding-top: 15px">
             <div class="col-md-5 col-sm-12">
-                <img class="edlogo" src="pcc.png" alt="PCC">
+                <picture class="edlogo">
+                    <source srcset="img/pcc.webp" type="image/webp">
+                    <source srcset="img/pcc.png" type="image/png">
+                    <img class="edlogo" src="img/pcc.png" alt="PCC">
+                </picture>
             </div>
             <div class="col-md-7 col-sm-12 text-center text-md-left">
                 <h3>Pasadena City College</h3>

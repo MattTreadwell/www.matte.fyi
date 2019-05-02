@@ -13,6 +13,10 @@ html {
     background-color: #0a0a0b;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 #particles-js{
     background: #0a0a0b;
     position: fixed;
@@ -169,7 +173,6 @@ div {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border: solid white;
 }
 
 .edlogo {
