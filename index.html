@@ -9,205 +9,150 @@
     <meta name="description"
           content="Matthew Treadwell is a Computer Science student at the University of Southern California (USC). His main focuses are Machine Learning and Web Development.">
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-<!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bd-navbar fixed-top">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#1">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/MattTreadwell">Github</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Particles background and main banner -->
-<div id="particles-js"></div>
-
-<div class="d-flex justify-content-center banner">
-    <h2 id="introtext" class="no-click load-hidden"><i>hi, my name is...</i></h2>
-
-    <div id="name-border" class="no-click load-hidden">
-        <h1 id="name-banner">TREADWELL</h1>
-    </div>
-</div>
 
 <!-- Resume Section -->
-<div class="container" id="1">
+<div class="container vertical-center" id="1">
 
     <!-- About -->
-    <div class="jumbotron load-hidden" id="about">
-        <h1 class="text-center jumboheader">About</h1>
+    <div class="jumbotron" id="main">
+        <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" value="0" id="option1" autocomplete="off" onclick="showSection(this)" checked> About
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="1" id="option2" autocomplete="off" onclick="showSection(this)"> Experience
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="2" id="option3" autocomplete="off" onclick="showSection(this)"> Projects
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="3" id="option4" autocomplete="off" onclick="showSection(this)"> Contact
+            </label>
+        </div>
 
+        <div style="padding: 10px"></div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12" style="border-right: 1px solid #aaaaaa">
                 <picture class="avatar">
                     <source srcset="img/avatar.webp" type="image/webp">
                     <source srcset="img/avatar.jpg" type="image/jpeg">
                     <img class="avatar" src="img/avatar.jpg" alt="avatar">
                 </picture>
+                <h4 class="text-center" style="padding-top: 10px">Matthew Treadwell</h4>
+                <p class="text-center">USC Computer Science <br> M.S. & B.S. '22</p>
+                <p class="text-center">Incoming <br> SRE Intern @ Red Hat</p>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12">
-                <p class="aboutpar text-lg-left text-center">
-                    My name is <b>Matthew Treadwell</b>.
-                    I currently study Computer Science at the <b>University of Southern California</b>.
-                    My interests consist of learning and using new technologies.
-                    Recently, my focus has been aimed towards Machine Learning and Web Development.
-                </p>
+                <div class="hideToggle" id="About">
+                    <p class="aboutpar text-lg-left text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
+                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
+                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
+                        tristique, velit in aliquet mollis, nulla dolor consectetur ligula, nec vulputate magna neque et
+                        neque. Sed ac iaculis urna. Sed luctus dignissim nunc in pharetra. Morbi elit lacus, volutpat vitae
+                        risus a, consequat sagittis sem. Maecenas congue elit quis volutpat pulvinar. In leo dui, vestibulum
+                        eu elit quis, ultrices dignissim urna. Nulla lorem magna, laoreet vel neque a, suscipit condimentum
+                        lacus.
+                    </p>
+                </div>
+
+                <div class="hideToggle" id="Experience">
+                    <p class="aboutpar text-lg-left text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+
+                    </p>
+                </div>
+
+                <div class="hideToggle" id="Projects">
+                    <p class="aboutpar text-lg-left text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
+                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
+                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
+                        tristique, velit in aliquet mollis, nulla dolor consectetur ligula, nec vulputate magna neque et
+                        neque. Sed ac iaculis urna. Sed luctus dignissim nunc in pharetra. Morbi elit lacus, volutpat vitae
+                        risus a, consequat sagittis sem. Maecenas congue elit quis volutpat pulvinar. In leo dui, vestibulum
+                        eu elit quis, ultrices dignissim urna. Nulla lorem magna, laoreet vel neque a, suscipit condimentum
+                        lacus.
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
+                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
+                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
+                        tristique, velit in aliquet mollis, nulla dolor consectetur ligula, nec vulputate magna neque et
+                        neque. Sed ac iaculis urna. Sed luctus dignissim nunc in pharetra. Morbi elit lacus, volutpat vitae
+                        risus a, consequat sagittis sem. Maecenas congue elit quis volutpat pulvinar. In leo dui, vestibulum
+                        eu elit quis, ultrices dignissim urna. Nulla lorem magna, laoreet vel neque a, suscipit condimentum
+                        lacus.
+                    </p>
+                </div>
+
+                <div class="hideToggle" id="Contact">
+                    <p class="aboutpar text-lg-left text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
+                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
+                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
+
+                    </p>
+                </div>
+
+
             </div>
         </div>
     </div>
 
-    <!-- Skills -->
-    <div class="jumbotron load-hidden" id="skills">
-        <h1 class="text-center jumboheader">Skills</h1>
-
-        <!-- text blob -->
-        <div class="row">
-            <div class="col-md-1 col-sm-0"></div>
-            <div class="col-md-10 col-md-offset-1 col-sm-12">
-                <p class="text-center skillblob">
-                    I enjoy working with others in building applications.
-                    I am most comfortable with traditional programming languages and system administration, but I have
-                    also created complex, full-stack applications.
-                </p>
-            </div>
-        </div>
-
-        <!-- Skill table(s) -->
-        <div class="row">
-            <div class="col-sm-12 skills load-hidden">
-                <h2 style="padding-bottom: 0" class="tableheader col-sm-12 text-center">Coding Skills</h2>
-
-                <div class="tableborder name col-sm-12"></div>
-                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Programming Languages</h3>
-
-                <div class="row">
-
-                    <div class="name col-md-4 col-sm-12 tableitem">C++</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">Java</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">Python</div>
-                </div>
-
-                <div class="tableborder name col-sm-12"></div>
-                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Scripting Languages</h3>
-
-                <div class="row">
-
-                    <div class="name col-md-4 col-sm-12 tableitem">Javascript</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">Bash</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">awk</div>
-                </div>
-
-                <div class="tableborder name col-sm-12"></div>
-                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Backend Technologies</h3>
-
-                <div class="row">
-
-                    <div class="name col-md-4 col-sm-12 tableitem">LAMP Stack</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">SQL</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">SSL</div>
-                </div>
-
-                <div class="tableborder name col-sm-12"></div>
-                <h3 class="tablesubheader col-sm-12 text-center text-md-left">Frontend Technologies</h3>
-
-                <div class="row">
-
-                    <div class="name col-md-4 col-sm-12 tableitem">HTML5</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">CSS3</div>
-                    <div class="name col-md-4 col-sm-12 tableitem">jQuery</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Education -->
-    <div class="jumbotron load-hidden" id="education">
-        <h1 class="text-center jumboheader">Education</h1>
-
-        <div class="row">
-            <div class="col-md-5 col-sm-12">
-                <picture class="edlogo">
-                    <source srcset="img/usc.webp" type="image/webp">
-                    <source srcset="img/usc.png" type="image/png">
-                    <img class="edlogo" src="img/usc.png" alt="USC">
-                </picture>
-            </div>
-            <div class="col-md-7 col-sm-12 text-center text-md-left">
-                <h3>University of Southern California</h3>
-                <p>January 2018 to December 2020</p>
-                <p>B.S. Computer Science</p>
-                <p></p>
-            </div>
-        </div>
-
-        <div class="tableborder name col-sm-12"></div>
-        <div class="row" style="padding-top: 15px">
-            <div class="col-md-5 col-sm-12">
-                <picture class="edlogo">
-                    <source srcset="img/pcc.webp" type="image/webp">
-                    <source srcset="img/pcc.png" type="image/png">
-                    <img class="edlogo" src="img/pcc.png" alt="PCC">
-                </picture>
-            </div>
-            <div class="col-md-7 col-sm-12 text-center text-md-left">
-                <h3>Pasadena City College</h3>
-                <p>September 2016 to December 2017</p>
-                <p>Computer Information Science</p>
-                <p>GPA: 3.75 (Dean's Honors)</p>
-            </div>
-        </div>
-
-    </div>
-</div>
+    <script type="text/javascript">
+        hideAll();
+        $('#About').show();
 
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        function showSection(radio) {
+            var selection = radio.value;
 
-<script>
-    particlesJS.load('particles-js', 'particles.json', function () {
-        console.log('particles.json loaded...')
-    })
-</script>
+            hideAll();
 
-<script>
-    ScrollReveal().reveal('#introtext', {delay: 200, reset: true});
-    ScrollReveal().reveal('#name-border', {delay: 350, reset: true});
-    ScrollReveal().reveal('.jumbotron', {reset: false, delay: 250});
-    ScrollReveal().reveal('.skills', {reset: false, delay: 250});
-</script>
+            switch (selection) {
+                case "0":
+                    $('#About').show();
+                    break;
+                case "1":
+                    $('#Experience').show();
+                    break;
+                case "2":
+                    $('#Projects').show();
+                    break;
+                case "3":
+                    $('#Contact').show();
+                    break;
+            }
+        }
+
+
+        function hideAll() {
+            $('.hideToggle').hide();
+        }
+
+    </script>
+
+
 
 </body>
 </html>
