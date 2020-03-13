@@ -48,88 +48,62 @@ html.sr .load-hidden {
     padding: 50px;
 }
 
-.container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .vertical-center {
     min-height: 100%;
     min-height: 100vh;
 
     display: flex;
     align-items: center;
-
 }
 
-.bd-navbar {
-    background-color: #0a0a0b;
-    font-family: 'Roboto', sans-serif;
-    min-height: 3vh;
+@media (max-width: 576px) {
+    #main {
+        font-family: 'SF Display', sans-serif;
+        background: rgba(255, 255, 255, 0.9);
+        position: relative;
+        padding: 0px 0px;
+        margin: 0px;
+    }
+
+    .vertical-center {
+        min-height: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: baseline;
+    }
 }
 
-.nav-link {
-    font-family: 'Roboto', sans-serif;
+@media (min-width: 992px) {
+    .rightBorder {
+        border-right: 1px solid #aaaaaa;
+    }
 }
 
-.no-click {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.navbar {
-    min-height: 3vh
-}
 
-.aboutpar {
+
+.sectionText {
     padding-top: 3%;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
-.banner {
-    position: static;
-    pointer-events: none;
+.quoteText {
+    font-size: 2em;
+
+}
+
+.quoteSubText {
+    color: #aaaaaa;
+    font-size: 1.2em;
 }
 
 .jumbotron {
     background-color: white;
-}
-
-.skillblob {
-    font-size: 1.3em;
-}
-
-.skills {
-    background-color: rgba(20, 20, 20, 0.7);
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-}
-
-.tableheader {
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 100;
-    font-style: normal;
-    font-size: 2.5em;
-    padding: 15px;
-}
-
-.tablesubheader {
-    color: rgba(200, 200, 200, 0.8);
-    padding: 5px;
-    font-size: 1.4em;
-}
-
-.tableitem {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.8em;
-    padding: 10px;
-
-}
-
-.tableborder {
-    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
 }
 
 .name {
