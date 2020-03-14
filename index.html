@@ -7,10 +7,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"/>
     <meta name="description"
-          content="Matthew Treadwell is a Computer Science student at the University of Southern California (USC). His main focuses are Machine Learning and Web Development.">
+          content="Matthew Treadwell is a Computer Science grad student at the University of Southern California.">
+    <meta name="keywords" content="Matthew, Treadwell, USC, CS, C++, SRE, SWE, LA">
 
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
@@ -32,16 +31,20 @@
     <div class="jumbotron" id="main">
         <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
             <label class="btn btn-secondary active">
-                <input type="radio" name="options" value="0" id="option1" autocomplete="off" onclick="showSection(this)" checked> About
+                <input type="radio" name="options" value="0" id="option1" autocomplete="off" onclick="showSection(this)"
+                       checked> About
             </label>
             <label class="btn btn-secondary">
-                <input type="radio" name="options" value="1" id="option2" autocomplete="off" onclick="showSection(this)"> Experience
+                <input type="radio" name="options" value="1" id="option2" autocomplete="off"
+                       onclick="showSection(this)"> Experience
             </label>
             <label class="btn btn-secondary">
-                <input type="radio" name="options" value="2" id="option3" autocomplete="off" onclick="showSection(this)"> Projects
+                <input type="radio" name="options" value="2" id="option3" autocomplete="off"
+                       onclick="showSection(this)"> Projects
             </label>
             <label class="btn btn-secondary">
-                <input type="radio" name="options" value="3" id="option4" autocomplete="off" onclick="showSection(this)"> Contact
+                <input type="radio" name="options" value="3" id="option4" autocomplete="off"
+                       onclick="showSection(this)"> Contact
             </label>
         </div>
 
@@ -71,7 +74,8 @@
                     </div>
 
                     <p class="sectionText text-left">
-                        Hi! My name is Matthew Treadwell and I'm a fourth year student getting my M.S. and B.S. at the University of Southern California.
+                        Hi! My name is Matthew Treadwell and I'm a fourth year student getting my M.S. and B.S. at the
+                        University of Southern California.
                         I'm a huge supporter of open-source software and Unix operating systems.
                     </p>
                     <div class="text-center">
@@ -85,70 +89,91 @@
 
                 <div class="hideToggle" id="Experience">
                     <div>
-                        <img src="img/redhatt.png">
+                        <a href="https://www.redhat.com/en">
+                            <img src="img/redhat.webp" onerror="this.onerror=null;this.src='redhat.png'">
+                        </a>
                         <p style="float: right" class="text-right">June 2020 - August 2020</p>
                         <br>
 
                         <h5>Red Hat Cloud Services</h5>
                         <h5><i>Site Reliability Engineer Intern</i></h5>
                         <p class="sectionText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                            I'll be working on OpenShift, aka enterprise kubernetes, this summer.
                         </p>
                     </div>
 
                     <div style="border-bottom: #aaaaaa solid 1px"></div>
 
                     <div>
-                        <img src="img/keck.png">
+                        <a href="http://www.hayounlee.org/">
+                            <img src="img/keck.png" onerror="this.onerror=null;this.src='keck.png'">
+                        </a>
                         <p style="float: right" class="text-right">May 2019 - July 2019</p>
                         <br>
 
                         <h5>Lee Research Group</h5>
                         <h5><i>Research Assistant</i></h5>
                         <p class="sectionText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
+                            Under the supervision of Dr. Hayoun Lee, I worked on the lab's cloud-compute platform.
+                            Specifically, I developed efficient back-end pipelines for the analysis of cellular data.
                         </p>
                     </div>
                 </div>
 
                 <div class="hideToggle" id="Projects">
                     <p class="sectionText text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
-                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
-                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
-                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
-                        tristique, velit in aliquet mollis, nulla dolor consectetur ligula, nec vulputate magna neque et
-                        neque. Sed ac iaculis urna. Sed luctus dignissim nunc in pharetra. Morbi elit lacus, volutpat vitae
-                        risus a, consequat sagittis sem. Maecenas congue elit quis volutpat pulvinar. In leo dui, vestibulum
-                        eu elit quis, ultrices dignissim urna. Nulla lorem magna, laoreet vel neque a, suscipit condimentum
-                        lacus.
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
-                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
-                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
-                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
-                        tristique, velit in aliquet mollis, nulla dolor consectetur ligula, nec vulputate magna neque et
-                        neque. Sed ac iaculis urna. Sed luctus dignissim nunc in pharetra. Morbi elit lacus, volutpat vitae
-                        risus a, consequat sagittis sem. Maecenas congue elit quis volutpat pulvinar. In leo dui, vestibulum
-                        eu elit quis, ultrices dignissim urna. Nulla lorem magna, laoreet vel neque a, suscipit condimentum
-                        lacus.
+                        <b>Programming</b> &ensp; C++, Java, GoLang, Python <br>
+                        <b>Web</b> &ensp; JavaScript, jQuery, HTML5, CSS3 <br>
+                        <b>Data</b> &ensp; MariaDB, MySQL, MongoDB, JSON <br>
+                        <b>DevOps</b> &ensp; Docker, Kubernetes, Travis CI <br>
+                        <br>
                     </p>
+
+                    <ul>
+                        <li><b>Self-Hosted Web Server</b> (3 years, in-progress) - A web server that I use to deploy my
+                            apps and static websites on.
+                        </li>
+                        <li><b>IMDB RESTful API</b> (2019) - Developed a Dockerized RESTful API for movie data.</li>
+                        <li><a href="https://github.com/MattTreadwell/Art-Forum"><b>Art Forum</b></a> (2019) - A reddit
+                            clone that censors unsafe imagery with machine learning and computer vision.
+                        </li>
+                        <li><a href="https://github.com/MattTreadwell/qmk_firmware"><b>QMK Firmware</b></a> (2019) -
+                            Assembled and programmed my own custom keyboard.
+                        </li>
+                        <li><a href="https://github.com/MattTreadwell/csci104-tests"><b>Data Structures Unit
+                            Tests</b></a> (2018) - Collaborated with a student to provide advanced unit tests for the
+                            entire class.
+                        </li>
+                        <li><a href="https://wiki.archlinux.org/index.php/Special:Contributions/Machu"><b>Arch Linux Wiki</b></a>
+                            - Added documentation for several articles.
+                        </li>
+                        <li><a href="https://github.com/MattTreadwell?tab=repositories"><b>FOSS contributions</b></a> -
+                            Submitted several patches and issue reports to open source projects.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="hideToggle" id="Contact">
                     <p class="sectionText text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nulla in gravida pretium, arcu
-                        nisl ultrices leo, et rhoncus erat neque quis tellus. Nam maximus maximus sapien, vitae porttitor
-                        dui gravida at. Aliquam erat volutpat. Mauris accumsan non magna a convallis. Morbi condimentum
-                        tellus et rutrum accumsan. Phasellus vel laoreet nulla. Pellentesque eu dignissim orci. Cras
+                        Questions? Job offer? Feel free to reach out to me or follow me at any of the links below! <br>
+                    <b>Email</b> &ensp; <a href="#" class="cryptedmail"
+                       data-name="hewtreadwell"
+                       data-domain="gmail"
+                       data-tld="com"
+                       onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+                    </a><br>
+                    <b>LinkedIn</b> &ensp; <a href="https://www.linkedin.com/in/matt-treadwell/">matt-treadwell</a><br>
+                    <b>GitHub</b> &ensp; <a href="https://github.com/MattTreadwell">MattTreadwell</a>
 
                     </p>
-                </div>
 
+                </div>
+                <div class="d-xl-block d-none" style="min-width: 1000px"></div>
 
             </div>
         </div>
     </div>
+</div>
 
     <script type="text/javascript">
         hideAll();
@@ -182,8 +207,6 @@
         }
 
     </script>
-
-
 
 </body>
 </html>

@@ -41,6 +41,10 @@ html.sr .load-hidden {
     opacity: 1
 }
 
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
 #main {
     font-family: 'SF Display', sans-serif;
     background: rgba(255, 255, 255, 0.9);
