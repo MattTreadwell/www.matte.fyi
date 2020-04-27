@@ -21,7 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background-color: #9fbfdf;
-    background-image: url("img/gradient.webp");
+    background-image: linear-gradient(to bottom right, #6EBBF1, #CD84B1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -58,7 +58,6 @@ html.sr .load-hidden {
 }
 
 .vertical-center {
-    min-height: 100%;
     min-height: 100vh;
 
     display: flex;
@@ -70,12 +69,11 @@ html.sr .load-hidden {
         font-family: 'SF Display', sans-serif;
         background: rgba(255, 255, 255, 0.9);
         position: relative;
-        padding: 0px 0px;
-        margin: 0px;
+        padding: 0 0;
+        margin: 0;
     }
 
     .vertical-center {
-        min-height: 100%;
         min-height: 100vh;
 
         display: flex;
@@ -90,8 +88,8 @@ html.sr .load-hidden {
 }
 
 .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
