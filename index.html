@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="hideToggle" id="Experience">
+                <div class="hideToggle" id="Experience" style="display: none">
                     <div>
                         <a href="https://www.redhat.com/en">
                             <picture>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="hideToggle" id="Projects">
+                <div class="hideToggle" id="Projects" style="display: none">
                     <p class="sectionText text-left">
                         <b>Programming</b> &ensp; C++, Java, GoLang, Python <br>
                         <b>Web</b> &ensp; JavaScript, jQuery, HTML5, CSS3 <br>
@@ -163,7 +163,7 @@
                     </ul>
                 </div>
 
-                <div class="hideToggle" id="Contact">
+                <div class="hideToggle" id="Contact" style="display: none">
                     <p class="sectionText text-left">
                         Questions? Job offer? Feel free to reach out to me or follow me at any of the links below! <br>
                     <b>Email</b> &ensp; <a href="#" class="cryptedmail"
@@ -186,15 +186,9 @@
 </div>
 
     <script type="text/javascript">
-        hideAll();
-        $('#About').show();
-
-
         function showSection(radio) {
             var selection = radio.value;
-
             hideAll();
-
             switch (selection) {
                 case "0":
                     $('#About').show();
@@ -211,11 +205,9 @@
             }
         }
 
-
         function hideAll() {
             $('.hideToggle').hide();
         }
-
     </script>
 
 </body>
