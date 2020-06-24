@@ -31,19 +31,14 @@ body {
 html {
 }
 
-html.sr .load-hidden {
-    visibility: hidden;
+/* Skills table padding */
+td:first-child + td {
+    padding-left: 10px;
 }
 
-#particles-js{
-    background: #cccccc;
-    position: fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:0;
-    opacity: 1
+
+html.sr .load-hidden {
+    visibility: hidden;
 }
 
 .cryptedmail:after {
@@ -139,12 +134,3 @@ div {
     margin-right: auto;
     margin-left: auto;
 }
-
-.edlogo {
-    max-width: 250px;
-    max-height: 250px;
-    width: 100%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
- }
