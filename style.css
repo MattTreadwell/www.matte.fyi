@@ -11,7 +11,7 @@
     src: url("font/SF-Pro-Display-Light.otf") format('opentype');
 }
 
-body {
+.background {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
@@ -20,12 +20,28 @@ body {
     width: 100%;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    background-color: #9fbfdf;
-    background-image: linear-gradient(to bottom right, #6EBBF1, #CD84B1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #6ebbf1, #cd84b1, #6ebbf1, #cd84b1);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradientFade 8s ease infinite;
+    -moz-animation: gradientFade 8s ease infinite;
+    animation: gradientFade 8s ease infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes gradientFade {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes gradientFade {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes gradientFade {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
 }
 
 html {
