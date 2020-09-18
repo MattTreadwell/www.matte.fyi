@@ -46,7 +46,7 @@ html.sr .load-hidden {
 }
 
 #main {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
     background: rgba(255, 255, 255, 0.9);
     position: relative;
     padding: 50px;
