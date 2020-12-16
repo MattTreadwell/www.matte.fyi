@@ -7,9 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"/>
     <meta name="description"
-          content="Matthew Treadwell is a Computer Science grad student at the University of Southern California.">
-    <meta name="keywords" content="Matthew, Treadwell, USC, CS, C++, SRE, SWE, LA">
-    <link rel="stylesheet" href="style.css">
+          content="Matthew Treadwell's personal site - An online portfolio detailing experience, open source projects, and contact info.">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -17,16 +15,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="background">
 
 <!-- Resume Section -->
-<div class="container vertical-center" id="1">
+<div class="container">
 
     <!-- About -->
     <div class="jumbotron" id="main">
-        <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
+        <div id="system">
+            <div class="windowbuttons">
+                <div class="windowbtn" style="background-color: #FF5B52"></div>
+                <div class="windowbtn" style="background-color: #E6C029"></div>
+                <div class="windowbtn" style="background-color: #54C72A"></div>
+            </div>
+
+            <div class="text-center title">
+                <p style="margin-bottom: 0"><b>Matthew Treadwell - Online Portfolio</b></p>
+            </div>
+
+        </div>
+
+
+        <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons" id="tabs">
             <label class="btn btn-secondary active">
                 <input type="radio" name="options" value="0" id="option1" autocomplete="off" onclick="showSection(this)"
                        checked> About
@@ -45,20 +58,18 @@
             </label>
         </div>
 
-        <div style="padding: 10px"></div>
-
         <div class="row">
-            <div class="col-lg-3 col-md-12 col-sm-12 rightBorder d-none d-lg-block">
+            <div class="col-lg-3 col-md-12 col-sm-12 rightBorder d-none d-lg-block" id="sidebar">
                 <picture class="avatar">
                     <source srcset="img/avatar.webp" type="image/webp">
                     <source srcset="img/avatar.jpg" type="image/jpeg">
                     <img class="avatar" src="img/avatar.jpg" alt="avatar">
                 </picture>
                 <h4 class="text-center" style="padding-top: 10px"><b>Matthew Treadwell</b></h4>
-                <p class="text-center">USC Computer Science <br> M.S. & B.S. '22</p>
-                <p class="text-center">Summer 2020 <br> SRE Intern @ Red Hat</p>
+                <p class="text-center">CS Student @ USC <br> Class of 2022</p>
+                <p class="text-center">Interested in development and infrastructure</p>
             </div>
-            <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="col-lg-9 col-md-12 col-sm-12" id="content">
                 <div class="hideToggle" id="About">
                     <div class="d-lg-none">
                         <picture class="avatar">
@@ -67,20 +78,25 @@
                             <img class="avatar" src="img/avatar.jpg" alt="avatar">
                         </picture>
                         <h4 class="text-center" style="padding-top: 10px"><b>Matthew Treadwell</b></h4>
-                        <p class="text-center">USC Computer Science <br> M.S. & B.S. '22</p>
                     </div>
 
                     <p class="sectionText text-left">
-                        Hi! My name is Matthew Treadwell and I'm a fourth year student getting my M.S. and B.S. at the
+                        Hi! My name is Matthew Treadwell.
+                        Currently, I'm currently a student getting my M.S. and B.S. at the
                         University of Southern California.
-                        I'm a huge supporter of open-source software and Unix operating systems.
+                        I'm a huge supporter of open-source software and Unix-based operating systems.
+                        My interests lie primarily in infrastructure development (ex. monitoring and autoscaling) and the
+                        design of high-availability systems.
+                        Over the past few years, most of my experience has involved full-stack web development, command-line scripting, and
+                        ops automation.
                     </p>
                     <div class="text-center">
                         <picture>
                             <source srcset="img/small.webp" type="image/webp">
                             <source srcset="img/small.gif" type="image/jpeg">
                             <img src="img/small.gif" alt="Crystal">
-                        </picture>                    </div>
+                        </picture>
+                    </div>
                     <div class="text-center">
                         <p class="quoteText">"As a programmer, I write programs."</p>
                         <p class="quoteSubText">- Ken Thompson</p>
@@ -91,9 +107,9 @@
                     <div>
                         <a href="https://www.redhat.com/en">
                             <picture>
-                                <source srcset="img/redhat.webp" type="image/webp">
-                                <source srcset="img/redhat.png" type="image/jpeg">
-                                <img src="img/redhat.png" alt="Red Hat Logo">
+                                <source srcset="img/redhatdark.webp" type="image/webp">
+                                <source srcset="img/redhatdark.png" type="image/jpeg">
+                                <img src="img/redhatdark.png" alt="Red Hat Logo">
                             </picture>
                         </a>
                         <p style="float: right" class="text-right">June 2020 - August 2020</p>
@@ -112,10 +128,11 @@
                     <div>
                         <a href="http://www.hayounlee.org/">
                             <picture>
-                                <source srcset="img/keck.webp" type="image/webp">
-                                <source srcset="img/keck.png" type="image/jpeg">
-                                <img src="img/keck.png" alt="USC Keck Logo">
-                            </picture>                        </a>
+                                <source srcset="img/keckdark.webp" type="image/webp">
+                                <source srcset="img/keckdark.png" type="image/jpeg">
+                                <img src="img/keckdark.png" alt="USC Keck Logo">
+                            </picture>
+                        </a>
                         <p style="float: right" class="text-right">May 2019 - July 2019</p>
                         <br>
 
@@ -156,6 +173,9 @@
                     <ul>
                         <li><a href="http://chad.matte.fyi"><b>Self-Hosted HPC & K8S Cluster</b></a>
                             (2015 - Present) - My public-facing, self-hosted Kubernetes cluster
+                        </li>
+                        <li><a href="https://csci401-poc.web.app"><b>USC Games 3D Asset Database</b></a>
+                            (2020) - Developed a serverless database for the USC Games department.
                         </li>
                         <li><a href="https://github.com/MattTreadwell/Ray-Tracer"><b>Ray Traced 3D Renderer</b></a>
                             (2020) - A 3D renderer written in C++ without any graphical libaries
@@ -211,7 +231,6 @@
 
                 </div>
                 <!--  Maintain vertical width across panels   -->
-                <div class="d-xl-block d-none" style="min-width: 1000px"></div>
 
             </div>
         </div>
