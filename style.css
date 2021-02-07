@@ -6,6 +6,7 @@
     overflow-y: auto;
     padding: 0;
     width: 100%;
+    overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background: linear-gradient(135deg, #6ebbf1, #cd84b1, #6ebbf1, #cd84b1);
