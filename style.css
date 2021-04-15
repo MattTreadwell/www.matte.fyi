@@ -1,6 +1,10 @@
+body {
+    background-color: #222222;
+}
+
 .background {
+    position: fixed;
     height: 100%;
-    min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -50,10 +54,10 @@ html.sr .load-hidden {
 #main {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
     position: relative;
-    margin-top: 3rem;
     padding: 0;
     background-color: #222222;
     color: #eeeeee !important;
+    min-width: 370px;
 }
 
 #content {
@@ -78,15 +82,15 @@ html.sr .load-hidden {
     width: 100%;
     height: 100%;
     padding: 10px 10px 5px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #sidebar {
     background-color: #323232;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 20px;
 }
 
 .btn {
@@ -151,7 +155,7 @@ div {
 }
 
 .jumbotron {
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .avatar {
@@ -164,7 +168,7 @@ div {
     margin-left: auto;
 }
 
-/* Mobile Rules */
+/* Mobile Rules (bootstrap sm) */
 @media (max-width: 576px) {
     #main {
         position: relative;
@@ -183,6 +187,19 @@ div {
     .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    /* Remove rounding */
+    .jumbotron {
+        border-radius: 0;
+    }
+
+    #system {
+        border-radius: 0;
+    }
+
+    #sidebar {
+        border-radius: 0;
     }
 }
 
