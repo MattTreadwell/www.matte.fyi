@@ -48,10 +48,10 @@
                 <input type="radio" name="options" value="0" id="option1" autocomplete="off" onclick="showSection(this)"
                        checked> About
             </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="options" value="1" id="option2" autocomplete="off"
-                       onclick="showSection(this)"> Experience
-            </label>
+<!--            <label class="btn btn-secondary">-->
+<!--                <input type="radio" name="options" value="1" id="option2" autocomplete="off"-->
+<!--                       onclick="showSection(this)"> Experience-->
+<!--            </label>-->
             <label class="btn btn-secondary">
                 <input type="radio" name="options" value="2" id="option3" autocomplete="off"
                        onclick="showSection(this)"> Projects
@@ -70,8 +70,8 @@
                     <img class="avatar" src="img/avatar.jpg" alt="avatar">
                 </picture>
                 <h4 class="text-center" style="padding-top: 10px"><b>Matthew Treadwell</b></h4>
-                <p class="text-center">CS Student @ USC <br> Class of 2022</p>
-                <p class="text-center">Software Engineer focused on infrastructure</p>
+                <p class="text-center">CS Student at USC <br> Class of 2022</p>
+                <div style="margin-top: 8.5rem"></div>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12" id="content">
                 <div class="hideToggle" id="About">
@@ -88,7 +88,7 @@
                     <!--<p class="sectionText text-left">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>-->
 
                     <p class="sectionText text-left">
-                        Hi! My name is Matthew Treadwell, and I'm a student getting my M.S. and B.S. at the University of Southern California.
+                        Hi! My name is Matthew Treadwell, and I'm a student getting my M.S. at the University of Southern California.
                         I am also a huge supporter of open-source software and Unix-based operating systems.
                         My interests lie primarily in infrastructure development (ex. monitoring and autoscaling) and the
                         design of high-availability systems.
@@ -108,76 +108,13 @@
                     </div>
                 </div>
 
-                <div class="hideToggle" id="Experience" style="display: none">
-                    <div>
-                        <a href="https://www.redhat.com/en">
-                            <picture>
-                                <source srcset="img/redhatdark.webp" type="image/webp">
-                                <source srcset="img/redhatdark.png" type="image/jpeg">
-                                <img src="img/redhatdark.png" alt="Red Hat Logo">
-                            </picture>
-                        </a>
-                        <p style="float: right" class="text-right">June 2020 &ndash; August 2020</p>
-                        <br>
-
-                        <h5>Red Hat</h5>
-                        <h5><i>Site Reliability Engineer Intern</i></h5>
-                        <p class="sectionText">
-                            I worked in Red Hat's Cloud Services division on a team dealing with managed Software-as-a-Service.
-                            During my internship, I developed and deployed an API for tracking our team's rapidly scaling OpenShift clusters.
-                        </p>
-                    </div>
-
-                    <div style="border-bottom: #aaaaaa solid 1px"></div>
-
-                    <div>
-                        <a href="http://www.hayounlee.org/">
-                            <picture>
-                                <source srcset="img/keckdark.webp" type="image/webp">
-                                <source srcset="img/keckdark.png" type="image/jpeg">
-                                <img src="img/keckdark.png" alt="USC Keck Logo">
-                            </picture>
-                        </a>
-                        <p style="float: right" class="text-right">May 2019 &ndash; July 2019</p>
-                        <br>
-
-                        <h5>Lee Research Group</h5>
-                        <h5><i>Research Assistant</i></h5>
-                        <p class="sectionText">
-                            Under the supervision of Dr. Hayoun Lee, I worked on the lab's cloud-compute platform.
-                            Specifically, I developed efficient back-end pipelines for the analysis of cellular data.
-                        </p>
-                    </div>
-                </div>
-
                 <div class="hideToggle" id="Projects" style="display: none">
-                    <div class="sectionText">
-                        <table>
-                            <tr>
-                                <td><b>Programming</b></td>
-                                <td>C++, Go, Python</td>
-                            </tr>
-                            <tr>
-                                <td><b>Web</b></td>
-                                <td>React, JavaScript, HTML5, CSS3</td>
-                            </tr>
-                            <tr>
-                                <td><b>Data</b></td>
-                                <td>MariaDB, MongoDB</td>
-                            </tr>
-                            <tr>
-                                <td><b>Infrastructure</b></td>
-                                <td>Ansible, Docker, Kubernetes, Openshift</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div style="padding: 1em"></div>
-
-
                     <ul>
                         <li><a href="http://chad.matte.fyi"><b>Self-Hosted Kubernetes Cluster</b></a>
                             (2015 &ndash; Present) <br> My public-facing, self-hosted Kubernetes cluster
+                        </li>
+                        <li><a href="https://github.com/fireant-bot/fireant"><b>Fireant</b></a>
+                            (2021) <br> Dependency manager for Apache Ivy projects; developed for Apache Nutch.
                         </li>
                         <li><a href="https://csci401-poc.web.app"><b>USC Games 3D Asset Database</b></a>
                             (2020) <br> Developed a serverless database for the USC Games department.
@@ -198,9 +135,6 @@
                             Tests</b></a> (2018) <br> Collaborated with a classmate to provide advanced unit tests for the
                             entire class.
                         </li>
-                        <li><a href="https://github.com/MattTreadwell?tab=repositories"><b>FOSS contributions</b></a> <br>
-                            Submitted several patches and issue reports to open source projects.
-                        </li>
                     </ul>
                 </div>
 
@@ -208,7 +142,7 @@
 
                     <div class="sectionText">
                         <p>
-                            Questions? Job offer? Feel free to reach out to me or follow me at any of the links below! <br>
+                            Questions? Feel free to reach out to me by email. <br>
                         </p>
                         <table>
                             <tr>
